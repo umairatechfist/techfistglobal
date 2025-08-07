@@ -476,29 +476,57 @@
       }
     }
 
-    @media (max-width: 768px) {
-      .hero-title {
-        font-size: 2.2rem;
-      }
+  @media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 80px;
+    text-align: center;
+  }
 
-      .hero-subtitle {
-        font-size: 1.1rem;
-      }
+  .hero-title {
+    font-size: 2rem;
+    margin-top: 0;
+    line-height: 1.2;
+  }
 
-      .hero-stats {
-        justify-content: center;
-        gap: 30px;
-      }
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
 
-      .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-      }
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 
-      .content-right {
-        height: 300px;
-      }
-    }
+  .content-right {
+    display: none; /* Hide complex animation on mobile for speed */
+  }
+
+  .hero-banner {
+    height: auto;
+    padding: 60px 0 80px;
+  }
+
+  .scroll-indicator {
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-element i {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .particles {
+    display: none;
+  }
+}
+
 
     /* Scroll Indicator */
     .scroll-indicator {
@@ -990,7 +1018,7 @@
               in-house products deliver cutting-edge software solutions tailored to modern business
               needs.<br><br>Whether you need strategic technology guidance, skilled professionals, or ready-to-deploy
               solutions, we have the expertise and resources to accelerate your success.</p>
-            <a href="#mypara" class="btn btn-light-bg page-scroll" data-aos="fade-up">Explore Our Services</a>
+            <a href="#features2" class="btn btn-light-bg page-scroll" data-aos="fade-up">Explore Our Services</a>
           </div>
         </div>
 
@@ -1162,7 +1190,7 @@
           </div>
           <div class="feature-info float-left">
             <h4>Automation Services</h4>
-            <p>We connect businesses with pre-vetted technical professionals for all roles with a strong focus on automation and system optimization.</p>
+            <p>We connect businesses with pre-vetted technical professionals for all roles with a strong focus on automation and system optimization.<br><br></p>
           <br>   <a class="read-more-btn" href="automation.html">Read More</a>
           </div>
         </div>
