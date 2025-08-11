@@ -29,6 +29,225 @@
 
 
   <style>
+    body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8fafc;
+        }
+     .business-solutions-hub {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #5c76e9 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .business-solutions-hub::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .main-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            text-align: center;
+            margin-bottom: 80px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .solutions-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .solution-item {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px 32px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .solution-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .solution-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .solution-symbol {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .solution-symbol i {
+            font-size: 28px;
+            color: white;
+        }
+
+        .solution-item:hover .solution-symbol {
+            transform: scale(1.1);
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+        }
+
+        .solution-item h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .solution-item p {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .metrics-showcase {
+            margin-top: 80px;
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .metrics-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .metric-block {
+            color: white;
+        }
+
+        .metric-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .metric-description {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            .business-solutions-hub {
+                padding: 80px 0;
+            }
+
+            .hero-content h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.125rem;
+            }
+
+            .solutions-layout {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .solution-item {
+                padding: 32px 24px;
+            }
+
+            .metrics-layout {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+
+            .metric-value {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+
+            .metrics-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animation classes for AOS */
+        [data-aos] {
+            pointer-events: none;
+        }
+        
+        [data-aos].aos-animate {
+            pointer-events: auto;
+        }
      .hero-banner {
       position: relative;
       height: 100vh;
@@ -968,6 +1187,157 @@
   </div>
 </section>
 
+<!-- IT Staffing Additional Services Section -->
+<section id="business-solutions-hub" class="business-solutions-hub">
+        <div class="main-wrapper" data-aos="fade-up">
+            <div class="hero-content">
+                <h2>Our Staffing Solutions</h2>
+                <p>Empowering organizations with flexible, scalable, and high-quality staffing services to meet evolving business needs in today's dynamic marketplace.</p>
+            </div>
+
+            <div class="solutions-layout">
+                <div class="solution-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="solution-symbol">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>Managed IT Services</h4>
+                    <p>We take complete ownership of your IT operations, from infrastructure management to application support. Our proactive monitoring, 24/7 helpdesk, and strategic IT planning ensure your business runs smoothly without disruptions.</p>
+                </div>
+
+                <div class="solution-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="solution-symbol">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h4>Human Resource Outsourcing</h4>
+                    <p>Let us handle your HR processes so you can focus on your core business. From payroll management to compliance handling, we streamline HR functions with precision and confidentiality.</p>
+                </div>
+
+                <div class="solution-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="solution-symbol">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4>Talent Solutions</h4>
+                    <p>We connect you with top-tier professionals who align with your company culture and objectives. Our rigorous selection process ensures you get the right talent, every time.</p>
+                </div>
+
+                <div class="solution-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="solution-symbol">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Contingent Workforce</h4>
+                    <p>Scale your team on-demand with our contingent workforce solutions. Whether you need seasonal staff, project-based hires, or specialized skill sets, we've got you covered.</p>
+                </div>
+
+                <div class="solution-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="solution-symbol">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Outsourced Solutions</h4>
+                    <p>Delegate entire business functions to our expert teams and reduce operational overheads. We ensure cost efficiency, quality delivery, and seamless process integration.</p>
+                </div>
+
+                <div class="solution-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="solution-symbol">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Process Optimization</h4>
+                    <p>Transform your business operations with our comprehensive process optimization services. We analyze, redesign, and implement efficient workflows that drive productivity and growth.</p>
+                </div>
+            </div>
+
+            <div class="metrics-showcase" data-aos="fade-up" data-aos-delay="700">
+                <div class="metrics-layout">
+                    <div class="metric-block">
+                        <span class="metric-value">500+</span>
+                        <span class="metric-description">Clients Served</span>
+                    </div>
+                    <div class="metric-block">
+                        <span class="metric-value">98%</span>
+                        <span class="metric-description">Client Satisfaction</span>
+                    </div>
+                    <div class="metric-block">
+                        <span class="metric-value">24/7</span>
+                        <span class="metric-description">Support Available</span>
+                    </div>
+                    <div class="metric-block">
+                        <span class="metric-value">10+</span>
+                        <span class="metric-description">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Add counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const animate = () => {
+                    const value = +counter.getAttribute('data-target') || parseInt(counter.innerText);
+                    const data = +counter.innerText;
+                    const time = value / speed;
+                    
+                    if (data < value) {
+                        counter.innerText = Math.ceil(data + time);
+                        setTimeout(animate, 1);
+                    } else {
+                        counter.innerText = counter.getAttribute('data-original') || value;
+                    }
+                };
+                
+                // Store original text and set data-target
+                if (!counter.getAttribute('data-original')) {
+                    counter.setAttribute('data-original', counter.innerText);
+                    const numValue = parseInt(counter.innerText);
+                    if (!isNaN(numValue)) {
+                        counter.setAttribute('data-target', numValue);
+                        counter.innerText = '0';
+                    }
+                }
+                
+                animate();
+            });
+        }
+
+        // Trigger counter animation when stats section comes into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Add smooth hover effects
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
 
 <!-- Roles We Staff Section -->
 <!-- <section class="tech-section">
@@ -1173,6 +1543,75 @@
   <script src="../js/form-validator.min.js"></script>
   <script src="../js/contact-form-script.js"></script>
   <script src="../js/main.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Add counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const animate = () => {
+                    const value = +counter.getAttribute('data-target') || parseInt(counter.innerText);
+                    const data = +counter.innerText;
+                    const time = value / speed;
+                    
+                    if (data < value) {
+                        counter.innerText = Math.ceil(data + time);
+                        setTimeout(animate, 1);
+                    } else {
+                        counter.innerText = counter.getAttribute('data-original') || value;
+                    }
+                };
+                
+                // Store original text and set data-target
+                if (!counter.getAttribute('data-original')) {
+                    counter.setAttribute('data-original', counter.innerText);
+                    const numValue = parseInt(counter.innerText);
+                    if (!isNaN(numValue)) {
+                        counter.setAttribute('data-target', numValue);
+                        counter.innerText = '0';
+                    }
+                }
+                
+                animate();
+            });
+        }
+
+        // Trigger counter animation when stats section comes into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Add smooth hover effects
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
 </body>
 
 </html>
