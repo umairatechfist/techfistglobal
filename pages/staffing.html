@@ -1269,75 +1269,7 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 100
-        });
-
-        // Add counter animation for stats
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stat-number');
-            const speed = 200;
-
-            counters.forEach(counter => {
-                const animate = () => {
-                    const value = +counter.getAttribute('data-target') || parseInt(counter.innerText);
-                    const data = +counter.innerText;
-                    const time = value / speed;
-                    
-                    if (data < value) {
-                        counter.innerText = Math.ceil(data + time);
-                        setTimeout(animate, 1);
-                    } else {
-                        counter.innerText = counter.getAttribute('data-original') || value;
-                    }
-                };
-                
-                // Store original text and set data-target
-                if (!counter.getAttribute('data-original')) {
-                    counter.setAttribute('data-original', counter.innerText);
-                    const numValue = parseInt(counter.innerText);
-                    if (!isNaN(numValue)) {
-                        counter.setAttribute('data-target', numValue);
-                        counter.innerText = '0';
-                    }
-                }
-                
-                animate();
-            });
-        }
-
-        // Trigger counter animation when stats section comes into view
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    observer.unobserve(entry.target);
-                }
-            });
-        });
-
-        const statsSection = document.querySelector('.stats-section');
-        if (statsSection) {
-            observer.observe(statsSection);
-        }
-
-        // Add smooth hover effects
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-8px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-    </script>
+   
 
 <!-- Roles We Staff Section -->
 <!-- <section class="tech-section">
@@ -1455,7 +1387,7 @@
             <ul class="contact-info">
               <li>
                 <i class="fas fa-map-marker-alt"></i>
-                <span></span>
+               <span>3433 Crowley Dr , Vancouver BC v5r6c5</span>
               </li>
               <li>
                 <i class="fas fa-phone"></i>
@@ -1544,74 +1476,73 @@
   <script src="../js/contact-form-script.js"></script>
   <script src="../js/main.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 100
-        });
+<script>
+(function() {
+    // Initialize AOS
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 100
+    });
 
-        // Add counter animation for stats
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stat-number');
-            const speed = 200;
+    function animateCounters() {
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
 
-            counters.forEach(counter => {
-                const animate = () => {
-                    const value = +counter.getAttribute('data-target') || parseInt(counter.innerText);
-                    const data = +counter.innerText;
-                    const time = value / speed;
-                    
-                    if (data < value) {
-                        counter.innerText = Math.ceil(data + time);
-                        setTimeout(animate, 1);
-                    } else {
-                        counter.innerText = counter.getAttribute('data-original') || value;
-                    }
-                };
-                
-                // Store original text and set data-target
-                if (!counter.getAttribute('data-original')) {
-                    counter.setAttribute('data-original', counter.innerText);
-                    const numValue = parseInt(counter.innerText);
-                    if (!isNaN(numValue)) {
-                        counter.setAttribute('data-target', numValue);
-                        counter.innerText = '0';
-                    }
+        counters.forEach(counter => {
+            const animate = () => {
+                const value = +counter.getAttribute('data-target') || parseInt(counter.innerText);
+                const data = +counter.innerText;
+                const time = value / speed;
+
+                if (data < value) {
+                    counter.innerText = Math.ceil(data + time);
+                    setTimeout(animate, 1);
+                } else {
+                    counter.innerText = counter.getAttribute('data-original') || value;
                 }
-                
-                animate();
-            });
-        }
+            };
 
-        // Trigger counter animation when stats section comes into view
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    observer.unobserve(entry.target);
+            if (!counter.getAttribute('data-original')) {
+                counter.setAttribute('data-original', counter.innerText);
+                const numValue = parseInt(counter.innerText);
+                if (!isNaN(numValue)) {
+                    counter.setAttribute('data-target', numValue);
+                    counter.innerText = '0';
                 }
-            });
-        });
+            }
 
-        const statsSection = document.querySelector('.stats-section');
-        if (statsSection) {
-            observer.observe(statsSection);
-        }
-
-        // Add smooth hover effects
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-8px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
+            animate();
         });
-    </script>
-</body>
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    const statsSection = document.querySelector('.stats-section');
+    if (statsSection) {
+        observer.observe(statsSection);
+    }
+
+    document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+})();
+</script>
+
+
 
 </html>
