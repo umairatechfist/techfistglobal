@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="../images/1.png" type="image/png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/animate.css">
   <link rel="stylesheet" href="../css/LineIcons.css">
   <link rel="stylesheet" href="../css/owl.carousel.css">
@@ -30,225 +30,227 @@
 
   <style>
     body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8fafc;
-        }
-     .business-solutions-hub {
-            padding: 120px 0;
-            background: linear-gradient(135deg, #5c76e9 0%, #764ba2 100%);
-            position: relative;
-            overflow: hidden;
-        }
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8fafc;
+    }
 
-        .business-solutions-hub::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
-        }
+    .business-solutions-hub {
+      padding: 120px 0;
+      background: linear-gradient(135deg, #5c76e9 0%, #764ba2 100%);
+      position: relative;
+      overflow: hidden;
+    }
 
-        .main-wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-            z-index: 2;
-        }
+    .business-solutions-hub::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+      opacity: 0.3;
+    }
 
-        .hero-content {
-            text-align: center;
-            margin-bottom: 80px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .main-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+    }
 
-        .hero-content h2 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 24px;
-            letter-spacing: -0.02em;
-            line-height: 1.2;
-        }
+    .hero-content {
+      text-align: center;
+      margin-bottom: 80px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-        .hero-content p {
-            font-size: 1.25rem;
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.7;
-            font-weight: 300;
-        }
+    .hero-content h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
 
-        .solutions-layout {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 32px;
-            margin-top: 60px;
-        }
+    .hero-content p {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.7;
+      font-weight: 300;
+    }
 
-        .solution-item {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-radius: 20px;
-            padding: 40px 32px;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            position: relative;
-            overflow: hidden;
-        }
+    .solutions-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 32px;
+      margin-top: 60px;
+    }
 
-        .solution-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.4s ease;
-        }
+    .solution-item {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 40px 32px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
 
-        .solution-item:hover::before {
-            transform: scaleX(1);
-        }
+    .solution-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
 
-        .solution-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-            background: rgba(255, 255, 255, 1);
-        }
+    .solution-item:hover::before {
+      transform: scaleX(1);
+    }
 
-        .solution-symbol {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 24px;
-            transition: all 0.3s ease;
-        }
+    .solution-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      background: rgba(255, 255, 255, 1);
+    }
 
-        .solution-symbol i {
-            font-size: 28px;
-            color: white;
-        }
+    .solution-symbol {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      transition: all 0.3s ease;
+    }
 
-        .solution-item:hover .solution-symbol {
-            transform: scale(1.1);
-            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
-        }
+    .solution-symbol i {
+      font-size: 28px;
+      color: white;
+    }
 
-        .solution-item h4 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1e293b;
-            margin-bottom: 16px;
-            line-height: 1.3;
-        }
+    .solution-item:hover .solution-symbol {
+      transform: scale(1.1);
+      box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+    }
 
-        .solution-item p {
-            color: #64748b;
-            font-size: 1rem;
-            line-height: 1.7;
-            font-weight: 400;
-        }
+    .solution-item h4 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
 
-        .metrics-showcase {
-            margin-top: 80px;
-            padding: 60px 0;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 24px;
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
+    .solution-item p {
+      color: #64748b;
+      font-size: 1rem;
+      line-height: 1.7;
+      font-weight: 400;
+    }
 
-        .metrics-layout {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            text-align: center;
-        }
+    .metrics-showcase {
+      margin-top: 80px;
+      padding: 60px 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
-        .metric-block {
-            color: white;
-        }
+    .metrics-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      text-align: center;
+    }
 
-        .metric-value {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 8px;
-            display: block;
-        }
+    .metric-block {
+      color: white;
+    }
 
-        .metric-description {
-            font-size: 1rem;
-            color: rgba(255, 255, 255, 0.8);
-            font-weight: 300;
-        }
+    .metric-value {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      display: block;
+    }
 
-        @media (max-width: 768px) {
-            .business-solutions-hub {
-                padding: 80px 0;
-            }
+    .metric-description {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 300;
+    }
 
-            .hero-content h2 {
-                font-size: 2.5rem;
-            }
+    @media (max-width: 768px) {
+      .business-solutions-hub {
+        padding: 80px 0;
+      }
 
-            .hero-content p {
-                font-size: 1.125rem;
-            }
+      .hero-content h2 {
+        font-size: 2.5rem;
+      }
 
-            .solutions-layout {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
+      .hero-content p {
+        font-size: 1.125rem;
+      }
 
-            .solution-item {
-                padding: 32px 24px;
-            }
+      .solutions-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
 
-            .metrics-layout {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 32px;
-            }
+      .solution-item {
+        padding: 32px 24px;
+      }
 
-            .metric-value {
-                font-size: 2.5rem;
-            }
-        }
+      .metrics-layout {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+      }
 
-        @media (max-width: 480px) {
-            .hero-content h2 {
-                font-size: 2rem;
-            }
+      .metric-value {
+        font-size: 2.5rem;
+      }
+    }
 
-            .metrics-layout {
-                grid-template-columns: 1fr;
-            }
-        }
+    @media (max-width: 480px) {
+      .hero-content h2 {
+        font-size: 2rem;
+      }
 
-        /* Animation classes for AOS */
-        [data-aos] {
-            pointer-events: none;
-        }
-        
-        [data-aos].aos-animate {
-            pointer-events: auto;
-        }
-     .hero-banner {
+      .metrics-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Animation classes for AOS */
+    [data-aos] {
+      pointer-events: none;
+    }
+
+    [data-aos].aos-animate {
+      pointer-events: auto;
+    }
+
+    .hero-banner {
       position: relative;
       height: 100vh;
       background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 25%, #2d1b69 50%, #4c1d95 75%, #6b21a8 100%);
@@ -967,40 +969,41 @@
     }
   </style>
 </head>
+
 <body>
- <!-- Header Section Start -->
+  <!-- Header Section Start -->
   <header id="home" class="hero-area2">
     <div class="overlay-light"></div>
     <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
-  <div class="container">
-    <a href="../index.html" class="navbar-brand">
-      <img src="../images/tfglogo.png" width="90" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="lni-menu"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto w-100 justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="../index.html#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="../index.html#light-featured">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="../index.html#features2">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="../index.html#pricing2">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="../index.html#contact2">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <div class="container">
+        <a href="../index.html" class="navbar-brand">
+          <img src="../images/tfglogo.png" width="90" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="lni-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="../index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="../index.html#light-featured">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="../index.html#features2">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="../index.html#pricing2">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="../index.html#contact2">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="hero-banner">
       <!-- Background Animation -->
       <div class="bg-animation">
@@ -1018,22 +1021,23 @@
         </div>
       </div>
 
-     
 
-     <!-- Updated HERO CONTENT CENTERED -->
+
+      <!-- Updated HERO CONTENT CENTERED -->
       <div class="hero-content" style="text-align: center; justify-content: center; grid-template-columns: 1fr;">
-  <div class="content-left">
-    <h1 class="hero-title" style="font-size: 4rem; margin-top: 80px;">Build Agile Teams with Expert Talent</h1>
-    <p class="hero-subtitle" style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 30px;">
-      Power your projects with skilled professionals. We help you scale your team quickly with vetted tech talent and industry experts.
-    </p>
+        <div class="content-left">
+          <h1 class="hero-title" style="font-size: 4rem; margin-top: 80px;">Build Agile Teams with Expert Talent</h1>
+          <p class="hero-subtitle" style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 30px;">
+            Power your projects with skilled professionals. We help you scale your team quickly with vetted tech talent
+            and industry experts.
+          </p>
 
-    <div class="cta-buttons" style="justify-content: center;">
-      <a href="#contact" class="btn-primary">Get Talent Now</a>
-      <a href="staffing.html" class="btn-secondary">Explore Services</a>
-    </div>
-  </div>
-</div>
+          <div class="cta-buttons" style="justify-content: center;">
+            <a href="#contact" class="btn-primary">Get Talent Now</a>
+            <a href="staffing.html" class="btn-secondary">Explore Services</a>
+          </div>
+        </div>
+      </div>
 
 
       <!-- Scroll Indicator -->
@@ -1042,237 +1046,255 @@
       </div>
     </div>
   </header>
-        
 
-    
- 
 
-   
-   <!-- Services Section -->
-<section class="services-section">
-  <div class="container">
-    <div class="section-title">
-      <h2> IT Staffing and Recruitment</h2>
-      <p>Flexible staffing solutions to help you access top-tier tech talent and scale your teams faster with the right expertise.</p>
-    </div>
 
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">👨‍💻</div>
-        <h3>Contract Staffing</h3>
-        <p>Quickly augment your team with skilled developers, engineers, and IT professionals on a contract basis.</p>
-        <ul class="service-features">
-          <li>Flexible short- and long-term contracts</li>
-          <li>Certified and vetted professionals</li>
-          <li>Quick onboarding process</li>
-          <li>Cost-effective resource allocation</li>
-          <li>Scalable engagement models</li>
-        </ul>
+
+
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-title">
+        <h2> IT Staffing and Recruitment</h2>
+        <p>Flexible staffing solutions to help you access top-tier tech talent and scale your teams faster with the
+          right expertise.</p>
       </div>
 
-      <div class="service-card">
-        <div class="service-icon">🏢</div>
-        <h3>Permanent Hiring</h3>
-        <p>Find and hire top permanent talent across various technologies and domains to strengthen your core team.</p>
-        <ul class="service-features">
-          <li>Full-time placement services</li>
-          <li>Extensive talent database</li>
-          <li>Pre-screened and interviewed candidates</li>
-          <li>End-to-end recruitment support</li>
-          <li>Custom hiring workflows</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">🌐</div>
-        <h3>Remote Developer Teams</h3>
-        <p>Build your own remote development team with dedicated resources and full transparency and control.</p>
-        <ul class="service-features">
-          <li>Dedicated developers for your project</li>
-          <li>Real-time collaboration</li>
-          <li>Timezone-aligned support</li>
-          <li>Secure infrastructure & NDA</li>
-          <li>Flexible engagement terms</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">🧑‍🏫</div>
-        <h3>Technical Interviews & Screening</h3>
-        <p>Let us handle the technical evaluation so you can focus on making the right hire, faster.</p>
-        <ul class="service-features">
-          <li>Expert-led technical screening</li>
-          <li>Customized assessments</li>
-          <li>Live coding and interview support</li>
-          <li>Soft skills and cultural fit checks</li>
-          <li>Transparent reporting</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">🔧</div>
-        <h3>Project-Based Staffing</h3>
-        <p>Deploy experts on-demand to deliver specific short-term or long-term IT projects with measurable outcomes.</p>
-        <ul class="service-features">
-          <li>End-to-end project ownership</li>
-          <li>Agile and waterfall support</li>
-          <li>Project managers and QA experts</li>
-          <li>Transparent delivery cycles</li>
-          <li>Full progress visibility</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">🤝</div>
-        <h3>Staff Augmentation</h3>
-        <p>Expand your internal team’s capabilities by integrating our skilled IT professionals into your ongoing projects.</p>
-        <ul class="service-features">
-          <li>Plug-and-play resource addition</li>
-          <li>No overhead hiring costs</li>
-          <li>Flexible contract terms</li>
-          <li>Zero bench-time risk</li>
-          <li>Faster time to delivery</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- IT Staffing Additional Services Section -->
-<section id="business-solutions-hub" class="business-solutions-hub">
-        <div class="main-wrapper" data-aos="fade-up">
-            <div class="hero-content">
-                <h2>Our Staffing Solutions</h2>
-                <p>Empowering organizations with flexible, scalable, and high-quality staffing services to meet evolving business needs in today's dynamic marketplace.</p>
-            </div>
-
-            <div class="solutions-layout">
-                <div class="solution-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="solution-symbol">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h4>Managed IT Services</h4>
-                    <p>We take complete ownership of your IT operations, from infrastructure management to application support. Our proactive monitoring, 24/7 helpdesk, and strategic IT planning ensure your business runs smoothly without disruptions.</p>
-                </div>
-
-                <div class="solution-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="solution-symbol">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <h4>Human Resource Outsourcing</h4>
-                    <p>Let us handle your HR processes so you can focus on your core business. From payroll management to compliance handling, we streamline HR functions with precision and confidentiality.</p>
-                </div>
-
-                <div class="solution-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="solution-symbol">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h4>Talent Solutions</h4>
-                    <p>We connect you with top-tier professionals who align with your company culture and objectives. Our rigorous selection process ensures you get the right talent, every time.</p>
-                </div>
-
-                <div class="solution-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="solution-symbol">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h4>Contingent Workforce</h4>
-                    <p>Scale your team on-demand with our contingent workforce solutions. Whether you need seasonal staff, project-based hires, or specialized skill sets, we've got you covered.</p>
-                </div>
-
-                <div class="solution-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="solution-symbol">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h4>Outsourced Solutions</h4>
-                    <p>Delegate entire business functions to our expert teams and reduce operational overheads. We ensure cost efficiency, quality delivery, and seamless process integration.</p>
-                </div>
-
-                <div class="solution-item" data-aos="fade-up" data-aos-delay="600">
-                    <div class="solution-symbol">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h4>Process Optimization</h4>
-                    <p>Transform your business operations with our comprehensive process optimization services. We analyze, redesign, and implement efficient workflows that drive productivity and growth.</p>
-                </div>
-            </div>
-
-            <div class="metrics-showcase" data-aos="fade-up" data-aos-delay="700">
-                <div class="metrics-layout">
-                    <div class="metric-block">
-                        <span class="metric-value">500+</span>
-                        <span class="metric-description">Clients Served</span>
-                    </div>
-                    <div class="metric-block">
-                        <span class="metric-value">98%</span>
-                        <span class="metric-description">Client Satisfaction</span>
-                    </div>
-                    <div class="metric-block">
-                        <span class="metric-value">24/7</span>
-                        <span class="metric-description">Support Available</span>
-                    </div>
-                    <div class="metric-block">
-                        <span class="metric-value">5+</span>
-                        <span class="metric-description">Years Experience</span>
-                    </div>
-                </div>
-            </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">👨‍💻</div>
+          <h3>Contract Staffing</h3>
+          <p>Quickly augment your team with skilled developers, engineers, and IT professionals on a contract basis.</p>
+          <ul class="service-features">
+            <li>Flexible short- and long-term contracts</li>
+            <li>Certified and vetted professionals</li>
+            <li>Quick onboarding process</li>
+            <li>Cost-effective resource allocation</li>
+            <li>Scalable engagement models</li>
+          </ul>
         </div>
-    </section>
+
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <h3>Permanent Hiring</h3>
+          <p>Find and hire top permanent talent across various technologies and domains to strengthen your core team.
+          </p>
+          <ul class="service-features">
+            <li>Full-time placement services</li>
+            <li>Extensive talent database</li>
+            <li>Pre-screened and interviewed candidates</li>
+            <li>End-to-end recruitment support</li>
+            <li>Custom hiring workflows</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Remote Developer Teams</h3>
+          <p>Build your own remote development team with dedicated resources and full transparency and control.</p>
+          <ul class="service-features">
+            <li>Dedicated developers for your project</li>
+            <li>Real-time collaboration</li>
+            <li>Timezone-aligned support</li>
+            <li>Secure infrastructure & NDA</li>
+            <li>Flexible engagement terms</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧑‍🏫</div>
+          <h3>Technical Interviews & Screening</h3>
+          <p>Let us handle the technical evaluation so you can focus on making the right hire, faster.</p>
+          <ul class="service-features">
+            <li>Expert-led technical screening</li>
+            <li>Customized assessments</li>
+            <li>Live coding and interview support</li>
+            <li>Soft skills and cultural fit checks</li>
+            <li>Transparent reporting</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3>Project-Based Staffing</h3>
+          <p>Deploy experts on-demand to deliver specific short-term or long-term IT projects with measurable outcomes.
+          </p>
+          <ul class="service-features">
+            <li>End-to-end project ownership</li>
+            <li>Agile and waterfall support</li>
+            <li>Project managers and QA experts</li>
+            <li>Transparent delivery cycles</li>
+            <li>Full progress visibility</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🤝</div>
+          <h3>Staff Augmentation</h3>
+          <p>Expand your internal team’s capabilities by integrating our skilled IT professionals into your ongoing
+            projects.</p>
+          <ul class="service-features">
+            <li>Plug-and-play resource addition</li>
+            <li>No overhead hiring costs</li>
+            <li>Flexible contract terms</li>
+            <li>Zero bench-time risk</li>
+            <li>Faster time to delivery</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT Staffing Additional Services Section -->
+  <section id="business-solutions-hub" class="business-solutions-hub">
+    <div class="main-wrapper" data-aos="fade-up">
+      <div class="hero-content">
+        <h2>Our Staffing Solutions</h2>
+        <p>Empowering organizations with flexible, scalable, and high-quality staffing services to meet evolving
+          business needs in today's dynamic marketplace.</p>
+      </div>
+
+      <div class="solutions-layout">
+        <div class="solution-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="solution-symbol">
+            <i class="fas fa-server"></i>
+          </div>
+          <h4>Managed IT Services</h4>
+          <p>We take complete ownership of your IT operations, from infrastructure management to application support.
+            Our proactive monitoring, 24/7 helpdesk, and strategic IT planning ensure your business runs smoothly
+            without disruptions.</p>
+        </div>
+
+        <div class="solution-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="solution-symbol">
+            <i class="fas fa-users-cog"></i>
+          </div>
+          <h4>Human Resource Outsourcing</h4>
+          <p>Let us handle your HR processes so you can focus on your core business. From payroll management to
+            compliance handling, we streamline HR functions with precision and confidentiality.</p>
+        </div>
+
+        <div class="solution-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="solution-symbol">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h4>Talent Solutions</h4>
+          <p>We connect you with top-tier professionals who align with your company culture and objectives. Our rigorous
+            selection process ensures you get the right talent, every time.</p>
+        </div>
+
+        <div class="solution-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="solution-symbol">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4>Contingent Workforce</h4>
+          <p>Scale your team on-demand with our contingent workforce solutions. Whether you need seasonal staff,
+            project-based hires, or specialized skill sets, we've got you covered.</p>
+        </div>
+
+        <div class="solution-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="solution-symbol">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h4>Outsourced Solutions</h4>
+          <p>Delegate entire business functions to our expert teams and reduce operational overheads. We ensure cost
+            efficiency, quality delivery, and seamless process integration.</p>
+        </div>
+
+        <div class="solution-item" data-aos="fade-up" data-aos-delay="600">
+          <div class="solution-symbol">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h4>Process Optimization</h4>
+          <p>Transform your business operations with our comprehensive process optimization services. We analyze,
+            redesign, and implement efficient workflows that drive productivity and growth.</p>
+        </div>
+      </div>
+
+      <div class="metrics-showcase" data-aos="fade-up" data-aos-delay="700">
+        <div class="metrics-layout">
+          <div class="metric-block">
+            <span class="metric-value">500+</span>
+            <span class="metric-description">Clients Served</span>
+          </div>
+          <div class="metric-block">
+            <span class="metric-value">98%</span>
+            <span class="metric-description">Client Satisfaction</span>
+          </div>
+          <div class="metric-block">
+            <span class="metric-value">24/7</span>
+            <span class="metric-description">Support Available</span>
+          </div>
+          <div class="metric-block">
+            <span class="metric-value">5+</span>
+            <span class="metric-description">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Process Section -->
-<section class="process-section">
-  <div class="container">
-    <div class="process-step h2">
-      <h2>Our IT Staffing Process</h2>
-      <p>A streamlined and strategic hiring process designed to connect you with the right talent quickly and efficiently.</p>
+  <section class="process-section">
+    <div class="container">
+      <div class="process-step h2">
+        <h2>Our IT Staffing Process</h2>
+        <p>A streamlined and strategic hiring process designed to connect you with the right talent quickly and
+          efficiently.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3>Requirement Analysis</h3>
+          <p>We collaborate with your team to understand role requirements, skill sets, and project goals for precise
+            talent alignment.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3>Candidate Sourcing</h3>
+          <p>Our recruiters tap into a large talent pool and networks to identify qualified candidates that match your
+            needs.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3>Screening & Evaluation</h3>
+          <p>We conduct rigorous technical and soft-skill assessments to shortlist top candidates for client review.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3>Client Interviews</h3>
+          <p>Coordinate interviews between shortlisted candidates and your team to ensure cultural and technical fit.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">5</div>
+          <h3>Onboarding</h3>
+          <p>Once selected, we facilitate seamless onboarding with necessary documentation, orientation, and access
+            setup.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">6</div>
+          <h3>Ongoing Support</h3>
+          <p>We continue to manage payroll, compliance, and performance monitoring to ensure sustained success and
+            satisfaction.</p>
+        </div>
+      </div>
     </div>
-
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="step-number">1</div>
-        <h3>Requirement Analysis</h3>
-        <p>We collaborate with your team to understand role requirements, skill sets, and project goals for precise talent alignment.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">2</div>
-        <h3>Candidate Sourcing</h3>
-        <p>Our recruiters tap into a large talent pool and networks to identify qualified candidates that match your needs.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">3</div>
-        <h3>Screening & Evaluation</h3>
-        <p>We conduct rigorous technical and soft-skill assessments to shortlist top candidates for client review.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">4</div>
-        <h3>Client Interviews</h3>
-        <p>Coordinate interviews between shortlisted candidates and your team to ensure cultural and technical fit.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">5</div>
-        <h3>Onboarding</h3>
-        <p>Once selected, we facilitate seamless onboarding with necessary documentation, orientation, and access setup.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">6</div>
-        <h3>Ongoing Support</h3>
-        <p>We continue to manage payroll, compliance, and performance monitoring to ensure sustained success and satisfaction.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
 
-   
 
-<!-- Roles We Staff Section -->
-<!-- <section class="tech-section">
+
+  <!-- Roles We Staff Section -->
+  <!-- <section class="tech-section">
   <div class="container">
     <div class="process-step h2">
       <h2>Roles We Staff</h2>
@@ -1324,16 +1346,17 @@
 </section> -->
 
 
-    <!-- Final CTA Section -->
-<section class="final-cta" id="contact">
-  <div class="container">
-    <h2>Need Top Talent to Power Your Projects?</h2>
-    <p>Let's discuss how our IT staffing solutions can help you scale your team with the right expertise—fast and efficiently.</p>
-   <a href="../index.html#contact2" class="cta-button">Get Started Today</a>
-  </div>
-</section>
+  <!-- Final CTA Section -->
+  <section class="final-cta" id="contact">
+    <div class="container">
+      <h2>Need Top Talent to Power Your Projects?</h2>
+      <p>Let's discuss how our IT staffing solutions can help you scale your team with the right expertise—fast and
+        efficiently.</p>
+      <a href="../index.html#contact2" class="cta-button">Get Started Today</a>
+    </div>
+  </section>
 
- <!-- Footer Section -->
+  <!-- Footer Section -->
   <footer id="footer-Content2">
     <div class="footer-content">
       <div class="container">
@@ -1355,9 +1378,9 @@
           <div class="footer-section">
             <h3 class="footer-title">Quick Links</h3>
             <ul class="footer-links">
-              <li><a href="#myhome">Home</a></li>
+              <li><a href="#home">Home</a></li>
               <li><a href="#myabout">About</a></li>
-              <li><a href="#mypara">Services</a></li>
+              <li><a href="#features2">Services</a></li>
               <li><a href="#mypricing">Pricing</a></li>
             </ul>
           </div>
@@ -1387,15 +1410,15 @@
             <ul class="contact-info">
               <li>
                 <i class="fas fa-map-marker-alt"></i>
-               <span>3433 Crowley Dr , Vancouver BC v5r6c5</span>
+                <span>3433 Crowley Dr , Vancouver BC v5r6c5</span>
               </li>
               <li>
                 <i class="fas fa-phone"></i>
-                <a href="tel:+16049088101">+1 (604) 908-8101</a>
+                <a href="tel:+1 604-260-7975">+1 604-260-7975</a>
               </li>
               <li>
                 <i class="fas fa-envelope"></i>
-                <a href="mailto:corptechfist@gmail.com">corptechfist@gmail.com</a>
+                <a href="mailto: contact@techfistglobal.com "> contact@techfistglobal.com </a>
               </li>
             </ul>
           </div>
@@ -1410,55 +1433,55 @@
       </div>
     </div>
   </footer>
-    <script>
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+  <script>
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
 
-        // Add intersection observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    // Add intersection observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
 
-        // Observe service cards and process steps
-        document.querySelectorAll('.service-card, .process-step').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
+    // Observe service cards and process steps
+    document.querySelectorAll('.service-card, .process-step').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
 
-        // Add parallax effect to hero particles
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const particles = document.querySelectorAll('.particle');
-            particles.forEach((particle, index) => {
-                const speed = 0.5 + (index * 0.1);
-                particle.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-        });
-    </script>
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    // Add parallax effect to hero particles
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const particles = document.querySelectorAll('.particle');
+      particles.forEach((particle, index) => {
+        const speed = 0.5 + (index * 0.1);
+        particle.style.transform = `translateY(${scrolled * speed}px)`;
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
@@ -1475,73 +1498,73 @@
   <script src="../js/form-validator.min.js"></script>
   <script src="../js/contact-form-script.js"></script>
   <script src="../js/main.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-(function() {
-    // Initialize AOS
-    AOS.init({
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    (function () {
+      // Initialize AOS
+      AOS.init({
         duration: 800,
         easing: 'ease-out-cubic',
         once: true,
         offset: 100
-    });
+      });
 
-    function animateCounters() {
+      function animateCounters() {
         const counters = document.querySelectorAll('.stat-number');
         const speed = 200;
 
         counters.forEach(counter => {
-            const animate = () => {
-                const value = +counter.getAttribute('data-target') || parseInt(counter.innerText);
-                const data = +counter.innerText;
-                const time = value / speed;
+          const animate = () => {
+            const value = +counter.getAttribute('data-target') || parseInt(counter.innerText);
+            const data = +counter.innerText;
+            const time = value / speed;
 
-                if (data < value) {
-                    counter.innerText = Math.ceil(data + time);
-                    setTimeout(animate, 1);
-                } else {
-                    counter.innerText = counter.getAttribute('data-original') || value;
-                }
-            };
-
-            if (!counter.getAttribute('data-original')) {
-                counter.setAttribute('data-original', counter.innerText);
-                const numValue = parseInt(counter.innerText);
-                if (!isNaN(numValue)) {
-                    counter.setAttribute('data-target', numValue);
-                    counter.innerText = '0';
-                }
+            if (data < value) {
+              counter.innerText = Math.ceil(data + time);
+              setTimeout(animate, 1);
+            } else {
+              counter.innerText = counter.getAttribute('data-original') || value;
             }
+          };
 
-            animate();
+          if (!counter.getAttribute('data-original')) {
+            counter.setAttribute('data-original', counter.innerText);
+            const numValue = parseInt(counter.innerText);
+            if (!isNaN(numValue)) {
+              counter.setAttribute('data-target', numValue);
+              counter.innerText = '0';
+            }
+          }
+
+          animate();
         });
-    }
+      }
 
-    const observer = new IntersectionObserver((entries) => {
+      const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounters();
-                observer.unobserve(entry.target);
-            }
+          if (entry.isIntersecting) {
+            animateCounters();
+            observer.unobserve(entry.target);
+          }
         });
-    });
+      });
 
-    const statsSection = document.querySelector('.stats-section');
-    if (statsSection) {
+      const statsSection = document.querySelector('.stats-section');
+      if (statsSection) {
         observer.observe(statsSection);
-    }
+      }
 
-    document.querySelectorAll('.service-card').forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-8px) scale(1.02)';
+      document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mouseenter', function () {
+          this.style.transform = 'translateY(-8px) scale(1.02)';
         });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
+
+        card.addEventListener('mouseleave', function () {
+          this.style.transform = 'translateY(0) scale(1)';
         });
-    });
-})();
-</script>
+      });
+    })();
+  </script>
 
 
 
