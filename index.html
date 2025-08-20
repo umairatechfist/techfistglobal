@@ -1534,38 +1534,48 @@
     <!-- Team Row -->
     <div class="row">
       <!-- Single Team Member -->
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <div class="single-team text-center">
-          <div class="team-thumb">
-            <img src="images/Tonya Jones-Smith.PNG" class="img-fluid" alt="Tonya Jones">
-          </div>
-          <div class="team-details">
-            <h5 class="team-title">Tonya Jones-Smith</h5>
-             <p class="role">Advisory Board Member</p>
-            <p class="description">
-              Computer Scientist & software engineering leader with 20+ years of expertise in QA, project management, and enterprise delivery. Founder of <strong>We All Matter Alliance</strong>, empowering survivors and communities through integrative therapies.
-            </p>
-          </div>
-        </div>
-      </div>
+     <div class="col-lg-3 col-md-6 col-xs-12">
+  <div class="single-team text-center">
+    <div class="team-thumb">
+      <img src="images/Tonya Jones-Smith.PNG" class="img-fluid" alt="Tonya Jones">
+    </div>
+    <div class="team-details">
+      <h5 class="team-title">Tonya Jones-Smith</h5>
+      <h6 class="role" style="font-size: 0.8rem; color: #3b82f6;">Advisory Board Member</h6>
+
+      <p class="description">
+        Tonya Jones-Smith is a computer scientist and software engineering leader with over 20 years of expertise in quality assurance and project management, and the founder of We All Matter Alliance—a nonprofit dedicated to empowering trauma survivors and marginalized communities through integrative herbal and alternative therapy. 
+        <span class="more-text" style="display:none;">
+          She has designed and implemented end-to-end QA frameworks for enterprise applications, built automated test pipelines that reduced defect rates by over 70%, and led cross-functional Agile teams to deliver scalable, reliable software on accelerated release cadences. Leveraging her project management acumen, Tonya orchestrates partnerships across academic and healthcare institutions, and deploys rigorous monitoring and evaluation systems to ensure evidence-based program delivery and sustainable impact.
+        </span>
+      </p>
+      <a href="javascript:void(0);" class="read-more">Read More</a>
+    </div>
+  </div>
+</div>
 
       <!-- Another Member -->
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <div class="single-team text-center">
-          <div class="team-thumb">
-            <img src="images/NancyPaul.png" class="img-fluid" alt="Nancy Paul">
-          </div>
-          <div class="team-details">
-            <h5 class="team-title">Nancy Paul</h5>
-              <p class="role">Advisory Board Member</p>
-            <p class="description">
-              Senior Delivery Manager specializing in Agile, Lean Six Sigma, and enterprise implementations. Passionate about streamlining operations and driving organizational efficiency.
-           <br>
-           <br>
-            </p>
-          </div>
-        </div>
-      </div>
+  <div class="col-lg-3 col-md-6 col-xs-12">
+  <div class="single-team text-center">
+    <div class="team-thumb">
+      <img src="images/NancyPaul.png" class="img-fluid" alt="Nancy Paul">
+    </div>
+    <div class="team-details">
+      <h5 class="team-title">Nancy Paul</h5>
+       <h6 class="role" style="font-size: 0.8rem; color: #3b82f6;">Advisory Board Member</h6>
+
+      <p class="description">
+        As a Senior Delivery Manager with extensive experience in leading complex enterprise implementations, Nancy specializes in optimizing processes, eliminating inefficiencies, and fostering transparency in project delivery.
+        <span class="more-text" style="display:none;">
+          Drawing on expertise in Lean Six Sigma, Agile methodologies, and Release Train Engineering, she helps organizations streamline operations, enhance productivity, and tackle complex business challenges with precision.
+        </span>
+      </p>
+      <a href="javascript:void(0);" class="read-more">Read More</a>
+    </div>
+  </div>
+</div>
+
+
     </div>
   </div>
 </section>
@@ -1824,6 +1834,20 @@
       });
     });
   </script>
+  <script>
+  document.querySelectorAll('.read-more').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const moreText = this.previousElementSibling.querySelector('.more-text');
+      if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        this.textContent = "Read Less";
+      } else {
+        moreText.style.display = "none";
+        this.textContent = "Read More";
+      }
+    });
+  });
+</script>
 </body>
 
 </html>
