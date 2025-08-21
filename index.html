@@ -1872,8 +1872,8 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" name="msg_subject"
-                    required="" data-error="Please enter your subject">
+                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" name="title" required>
+
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -2104,6 +2104,45 @@
             }
         }
     </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+(function() {
+    emailjs.init("lDnSQ-TKgDWIjoLtu"); // Your EmailJS Public Key
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    let msgSubmit = document.getElementById("msgSubmit");
+    msgSubmit.classList.remove("hidden");
+    msgSubmit.style.color = "#000";
+    msgSubmit.innerHTML = "Sending...";
+
+    emailjs.sendForm("service_xsug0wk", "template_jm8rjm8", "#contactForm")
+    .then(() => {
+        showSuccess();
+    }, (error) => {
+        showError(error);
+    });
+});
+
+function showSuccess() {
+    let msgSubmit = document.getElementById("msgSubmit");
+    msgSubmit.style.color = "green";
+    msgSubmit.innerHTML = "Message sent successfully!";
+    document.getElementById("contactForm").reset();
+}
+
+function showError(err) {
+    console.error(err);
+    let msgSubmit = document.getElementById("msgSubmit");
+    msgSubmit.style.color = "red";
+    msgSubmit.innerHTML = "Failed to send. Try again.";
+}
+</script>
+
+
 </body>
 
 </html>
